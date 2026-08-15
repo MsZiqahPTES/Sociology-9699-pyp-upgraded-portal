@@ -528,7 +528,7 @@ with tab4:
     with col_m:
         as_month = st.selectbox(
             "Select Session", 
-            ["June / Summer (s)", "November / Autumn (w)"], 
+            [" June (s) ", " November (w) "], 
             key="ms_mth"
         )
         month_code = "s" if "June" in as_month else "w"
@@ -536,7 +536,7 @@ with tab4:
     with col_v:
         as_variant = st.selectbox(
             "Select Variant", 
-            ["11", "12", "21", "22", "31", "32", "41", "42"], 
+            ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], 
             index=1,
             key="ms_var"
         )
