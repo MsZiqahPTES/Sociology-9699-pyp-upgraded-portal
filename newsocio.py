@@ -621,19 +621,19 @@ with tab5:
 
         c1, c2, c3 = st.columns(3)
         with c1:
-            st.link_button("📚 Sociology Paper 1", drive_links.get("p1_soc", "https://drive.google.com"), use_container_width=True)
+            st.link_button("📚 AS Level Sociology Paper 1", drive_links.get("p1_soc", "https://drive.google.com"), use_container_width=True)
             st.markdown("<br>", unsafe_allow_html=True)
             st.link_button("🔑 Marking Schemes Paper 1&2", drive_links.get("ms_p1_p2", "https://drive.google.com"), use_container_width=True)
             
         with c2:
-            st.link_button("📚 Sociology Paper 2", drive_links.get("p2_soc", "https://drive.google.com"), use_container_width=True)
+            st.link_button("📚 AS Level Sociology Paper 2", drive_links.get("p2_soc", "https://drive.google.com"), use_container_width=True)
             st.markdown("<br>", unsafe_allow_html=True)
             st.link_button("🔑 Marking Schemes Paper 3&4", drive_links.get("ms_p3_p4", "https://drive.google.com"), use_container_width=True)
             
         with c3:
-            st.link_button("📚 Sociology Paper 3", drive_links.get("p3_soc", "https://drive.google.com"), use_container_width=True)
+            st.link_button("📚 A Level Sociology Paper 3", drive_links.get("p3_soc", "https://drive.google.com"), use_container_width=True)
             st.markdown("<br>", unsafe_allow_html=True)
-            st.link_button("📚 Sociology Paper 4", drive_links.get("p4_soc", "https://drive.google.com"), use_container_width=True)
+            st.link_button("📚 A Level Sociology Paper 4", drive_links.get("p4_soc", "https://drive.google.com"), use_container_width=True)
 
     elif pwd_input:
         st.error("Incorrect Admin Password.")
