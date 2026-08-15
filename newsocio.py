@@ -343,16 +343,16 @@ with st.sidebar:
 
 # --- NAVIGATION TABS ---
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📚 AS Sociology (P1 & P2)", 
-    "🌐 A Level Sociology (P3 & P4)", 
+    "📚'AS'Sociology (P1 & P2)", 
+    "🌐'A' Sociology (P3 & P4)", 
     "🛒 PYP Cart", 
     "🔑 Answer Schemes", 
-    "⚙️ Admin / Drive Upload"
+    "⚙️ Upload PYP"
 ])
 
 # --- TAB 1: AS SOCIOLOGY (PAPER 1 or PAPER 2) ---
 with tab1:
-    st.subheader("📚 Sociology Search ('AS' Paper 1&2)")
+    st.subheader("📚 Sociology Search ('AS' Level Papers (P1/P2)")
     
     selected_as_paper = st.selectbox(
         "Select Target Component Paper:", 
@@ -402,7 +402,7 @@ with tab1:
 
 # --- TAB 2: A LEVEL SOCIOLOGY (PAPER 3 or PAPER 4) ---
 with tab2:
-    st.subheader("🌍 Sociology Search ('A' P3&4)")
+    st.subheader("🌍 Sociology Search ('A' Level Papers (P3/P4)")
     
     selected_a_paper = st.selectbox(
         "Select Target Component Paper:", 
@@ -452,7 +452,7 @@ with tab2:
 
 # --- TAB 3: CART & WORKSHEET GENERATOR ---
 with tab3:
-    st.subheader("🛒 PYP Cart")
+    st.subheader("🛒 PYP Cart and Worksheet generator")
     
     if len(st.session_state.handout_basket) > 0:
         st.info(f"### 📋 Selected Question Pages ({len(st.session_state.handout_basket)} items)")
@@ -505,7 +505,7 @@ with tab3:
 
 # --- TAB 4: ANSWER SCHEMES ---
 with tab4:
-    st.subheader("🔑 Download Mark Scheme")
+    st.subheader("🔑 Download Marking Schemes")
     
     col_level, col_y, col_m, col_v = st.columns([2, 1, 2, 2])
     
@@ -604,7 +604,7 @@ with tab4:
 
 # --- TAB 5: UPLOAD PYP / ADMIN DASHBOARD ---
 with tab5:
-    st.subheader("⚙️ Upload PYP")
+    st.subheader("⚙️ Upload PYP and Admin dashboard")
     st.caption("Secure admin portal for managing the 6 Google Drive repositories for Sociology 9699.")
 
     admin_pwd = st.secrets.get("ADMIN_PASSWORD", "")
